@@ -8,8 +8,8 @@ RUN npm install -g @angular/cli
 
 COPY mule /app
 
-EXPOSE 80
-
 WORKDIR /app
+
+VOLUME [ "/app" ]
 
 CMD [ "npm", "run", "start" ]
